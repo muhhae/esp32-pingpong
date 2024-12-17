@@ -1,4 +1,5 @@
 #include "device.hpp"
+#include "HardwareSerial.h"
 
 MD_Parola display = MD_Parola(HARDWARE_TYPE, DIN_PIN, CLK_PIN, CS_PIN, MAX_DEVICES);
 MD_MAX72XX native_display = MD_MAX72XX(HARDWARE_TYPE, DIN_PIN, CLK_PIN, CS_PIN, MAX_DEVICES);
@@ -11,4 +12,6 @@ void Setup() {
     display.begin();
     display.setIntensity(0);
     display.displayClear();
+
+    Serial.begin(9600);
 }

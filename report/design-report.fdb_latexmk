@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1733147329.4847 "design-report.tex" "design-report.pdf" "design-report" 1733147331.44282 0
+["pdflatex"] 1733147602.85453 "design-report.tex" "design-report.pdf" "design-report" 1733147604.83271 0
   "../include//player.hpp" 1732471090.39299 281 0439ed7cd4df51cc17cadd4024c06a46 ""
   "../include/ball.hpp" 1732484395.96093 149 665f7125fceb7c0ac6448ef64cb1e732 ""
   "../include/device.hpp" 1733144343.55838 408 5ad19b0b1e5bad449ee4989e625e78a5 ""
@@ -91,10 +91,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1732478974.32495 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1732478928 7113016 83752d84ba9996e54aaadae6cc80840f ""
-  "design-report.aux" 1733147331.3834 3247 3ec14f9f3b59f3e7014e6dbf54964804 "pdflatex"
-  "design-report.out" 1733147331.3844 1148 4c639697b94327ec36434747761a5519 "pdflatex"
-  "design-report.tex" 1733147328.25043 5842 fbee9b923a90dfda53a382cf96004b8a ""
+  "design-report.aux" 1733147604.77525 3374 aaceee9ba32b8d626d891b2f5aa789dd "pdflatex"
+  "design-report.out" 1733147604.77525 1148 4c639697b94327ec36434747761a5519 "pdflatex"
+  "design-report.tex" 1733147372.96394 5977 aaff4a1e76ce49d8c36ef7bc27d45192 ""
   "images/desain_game.png" 1732472508.97198 2004 a8e5bdf0f002412b351dbc9e5d4283e3 ""
+  "images/item.jpeg" 1733147245.78433 138260 5b353e32065a5f6b53b905ecd5901b28 ""
   "images/logo.png" 1732481653.95794 1031906 cc21ff9db9a1edfe90d403b961fb863b ""
   "images/menu.png" 1732482747.92394 1530 d450ddde475745df1d23196a980a3c95 ""
   "images/schematic.png" 1732477873.99896 311075 a8c09f9d1d05926d4918f9966a239cdc ""

@@ -2,40 +2,75 @@
 #include <cstdlib>
 #include <ctime>
 
-#include "ball.hpp"
+#include "HardwareSerial.h"
+#include "MD_Parola.h"
 #include "device.hpp"
-#include "esp32-hal.h"
-#include "player.hpp"
-#include "vector2.hpp"
+#include "esp32-hal-adc.h"
+#include "esp32-hal-gpio.h"
+#include "esp32-hal-timer.h"
+#include "global.hpp"
+#include "score.hpp"
+
 
 void setup() {
     Setup();
     // Intro();
-    analogReadResolution(12);
-    analogSetAttenuation(ADC_0db);
-    std::srand(std::time(0));
+    analogReadResolution(3);
 }
 
-Ball n = Ball(Vector2(0, 0));
-Player p1 = Player(0, 0, Vector2(-8, 0));
-Player p2 = Player(0, 0, Vector2(7, 0));
+int last = 0;
 
 void loop() {
-    n.Draw();
+    int current = millis();
+
+    b.Update();
+    p1.CheckInput();
+    p2.CheckInput();
+
+    if (current - last < 50) {
+        return;
+    }
+
+    last  = current;
+
+    native_display.clear();
     p1.Draw();
     p2.Draw();
-    delay(100);
-    native_display.clear();
-    n.position = n.position + Vector2(std::rand()%3-1, std::rand()%3-1);
-    if (abs(n.position.x) > 15 || abs(n.position.y) > 3) {
-        n.position = Vector2(0, 0);
+    b.Draw();
+
+    RenderScore(p2.score, 9);
+    RenderScore(p1.score, -16);
+
+    if (p1.score >= 11 && p1.score - p2.score >= 2) {
+        native_display.clear();
+        display.displayText("P1 WIN", PA_CENTER, 50, 1000, PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
+        while (!digitalRead(p1.smashInput)&& !digitalRead(p2.smashInput)) {
+            if (display.displayAnimate()) {
+                display.displayReset();
+            }
+        }
+        p1.score = 0;
+        p2.score = 0;
     }
-    p1.position = p1.position + Vector2(0, std::rand()%3-1);
-    if (abs(p1.position.y) > 3) {
-        p1.position.y = 0;
-    }
-    p2.position = p2.position + Vector2(0, std::rand()%3-1);
-    if (abs(p2.position.y) > 3) {
-        p2.position.y = 0;
+    else if (p2.score >= 11 && p2.score - p1.score >= 2) {
+        native_display.clear();
+        display.displayText("P2 WIN", PA_CENTER, 50, 1000, PA_SCROLL_LEFT, PA_SCROLL_LEFT);
+        while (!digitalRead(p1.smashInput)&& !digitalRead(p2.smashInput)) {
+            if (display.displayAnimate()) {
+                display.displayReset();
+            }
+        }
+        p1.score = 0;
+        p2.score = 0;
+    } else if (p2.score >= 15 && p1.score >= 15) {
+        native_display.clear();
+        display.displayText("TIE", PA_CENTER, 50, 1000, PA_SCROLL_UP, PA_SCROLL_UP);
+        while (!digitalRead(p1.smashInput)&& !digitalRead(p2.smashInput)) {
+            if (display.displayAnimate()) {
+                display.displayReset();
+            }
+        }
+        p1.score = 0;
+        p2.score = 0;
     }
 }

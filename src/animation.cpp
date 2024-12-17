@@ -1,5 +1,7 @@
 #include "device.hpp"
-#include "intro.hpp"
+#include <cstdio>
+#include "animation.hpp"
+#include "global.hpp"
 
 void Intro() {
     for (int i = 0; i < 8; i++) {
@@ -43,5 +45,7 @@ void Intro() {
     }
     native_display.clear();
     display.displayScroll("Muhammad Haekal Muhyidin Al-Araby 5024221030", PA_CENTER, PA_SCROLL_LEFT, 100);
+    while(!display.displayAnimate());
+    display.displayScroll("PING PONG", PA_CENTER, PA_SCROLL_RIGHT, 100);
     while(!display.displayAnimate());
 }
