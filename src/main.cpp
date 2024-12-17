@@ -2,20 +2,25 @@
 #include <cstdlib>
 #include <ctime>
 
-#include "HardwareSerial.h"
 #include "MD_Parola.h"
+#include "animation.hpp"
 #include "device.hpp"
 #include "esp32-hal-adc.h"
 #include "esp32-hal-gpio.h"
-#include "esp32-hal-timer.h"
 #include "global.hpp"
 #include "score.hpp"
 
 
 void setup() {
     Setup();
-    // Intro();
+    Intro();
     analogReadResolution(3);
+    display.displayScroll("PRESS ANY BUTTON TO START...", PA_CENTER, PA_SCROLL_LEFT, 100);
+    while (!digitalRead(p1.smashInput) && !digitalRead(p2.smashInput)) {
+        if (display.displayAnimate()) {
+            display.displayReset();
+        }
+    }
 }
 
 int last = 0;
