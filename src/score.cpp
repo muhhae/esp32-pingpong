@@ -81,7 +81,7 @@ uint16_t binaryRep[] = {
 };
 
 void RightRenderScore(uint8_t score, int x) {
-    Vector2 position = Vector2(x, 0);
+    Vector2 position = Vector2(x, 1);
 
     int firstDigit = 0;
     int secondDigit = 0;

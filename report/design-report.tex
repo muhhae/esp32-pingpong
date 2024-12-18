@@ -42,6 +42,9 @@
 
 \lstset{style=mystyle}
 
+\setlength{\parskip}{0.5em} % Adjust paragraph spacing
+\setlength{\parindent}{0pt} % Remove paragraph indentation
+
 \begin{document}
 \begin{titlepage}
     \centering
@@ -73,24 +76,40 @@
     INSTITUT TEKNOLOGI SEPULUH NOPEMBER\\2024}
 \end{titlepage}
 
+\section{Gambaran Umum}
+Pingpong atau tenis meja adalah salah satu olahraga yang dimainkan 2 orang yang saling berlawanan.
+Untuk mendapat skor pemain harus memasukkan bola ke daerah lawan. Bola digerakkan dengan paddle. Pemain dapat
+service, smash, maupun menangkis bola.
+
+Project ini adalah implementasi dari pingpong ke dalam dotmatrix display dimana
+player dapat mengendalikan paddle dengan slide potentiomenter dan smash dengan menekan button.
+smash akan membuat bola bergerak lurus dan bertambah cepat.
+
+Untuk memenangkan permainan Player harus mendapatkan skor lebih atau sama dengan 11 dan memiliki keunggulan 2 poin
+dari lawan. Bila keunggulan tersebut tidak dimiliki maka permainan akan berlanjut terus menerus hingga keduanya mendapatkan skor 15
+yang akan berakhir seri.
 
 \section{Komponen}
-\begin{enumerate}
-    \item ESP32\\
-    ESP32 sebagai mikrokontroller yang digunakan untuk mengendalikan dotmatrix
-    melalui program yang telah dipasang atau flash.
-    \item MAX7219 8x32 LED Dot Matrix Display Module\\
-    Modul terdiri dari 4 buah dot matrix dan IC MAX7219 yang digunakan untuk sebagai
-    penghubung antara ESP32 dan display dotmatrix. Bertindak sebagai decoder dan selector.
-    \item PCB\\
-    Sebagai tempat untuk merangkai barang yang ada dan menyambungkannya.
-    \item Pin Header Female\\
-    Untuk menghubungkan ESP32 dengan PCB.
-    \item Pin Header Male Siku\\
-    Menghubungkan display ke PCB
-    \item Push Button\\untuk input smash
-    \item Slide Potentiometer\\input gerakan player
-\end{enumerate}
+\subsection{Normally Close Switch}
+Saklar yang yang tertutup pada kondisi normal dan terbuka ketika ditekan. Dengan memanfaatkan pull-up internal
+pada pin GPIO ESP32 dan menyambungkan ujung lainnya ke ground kita dapat mendapatkan nilai 1 ketika ditekan.
+Pada project ini switch ini dimanfaatkan untuk player dapat melakukan smash saat ditekan.
+
+\subsection{Slide Potentiometer}
+Potentiometer jenis ini mengubah resistansi pada rangkaian dengan menggunakan mekanisme geser. Karena sifatnya
+yang dapat menghasilkan data analog biasa digunakan untuk mengatur parameter suatu device dengan akurasi yang lebih
+tinggi. Pada ESP32 kita dapat membaca nilai dari potentio meter ini dengan menggunakan pin ADC pada ESP32.
+Pin ADC pada ESP32 dapat membaca nilai tegangan dengan rentang 0 - 3.3v setelah itu maka esp akan menunjukkan
+nilai maksimum. Resolusi ADC dari ESP32 adalah dari rentang 0 - 12 dimana semakin tinggi resolusi akan semakin akurat namun
+semakin berat juga pada performa. Pada project ini saya memilih 3 sebagai resolusi karena kita hanya membutuhkan
+nilai 0 - 8. Karena hanya terdapat 8 pixel pada dotmatrix vertikal.
+
+\subsection{Led DotMatrix 8x32}
+Dotmatrix MAX7219 adalah modul untuk mengendalikan display dotmatrix 8x8 sebanyak 4 buah. Chip yang digunakan mampu
+mengendalikan seluruh pixel pada dotmatrix. Informasi dikirimkan secara serial. Dan menyebar ke seluruh dotmatrix.
+Led ini biasa digunakan untuk running text dan game interaktif.
+
+\subsection{ESP32}
 
 \section{Desain Sistem}
 \subsection{Rangkaian Skematik}

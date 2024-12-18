@@ -5,6 +5,7 @@
 
 class Player {
 public:
+    bool after_service = false;
     bool service = false;
     Vector2 position;
     Player(uint8_t dirInput, uint8_t smashInput, Vector2 position = Vector2());

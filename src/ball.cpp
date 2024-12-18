@@ -7,7 +7,9 @@
 #include "device.hpp"
 
 Ball::Ball(Vector2 position) : position(position) {
-    move = Vector2(-1, 0);
+    this->position = Vector2(-6, p1.position.y);
+    this->move = Vector2(0,0);
+    this->updateRate = 1;
 }
 
 void Ball::HitCheck() {
@@ -31,24 +33,30 @@ void Ball::HitCheck() {
 }
 
 void Ball::ScoreCheck() {
-    if (this->position.x < p1.position.x) {
-        buzzer.Buzz();
+    if (this->position.x < -8) {
         display.displayText("SCORED", PA_CENTER, 10, 500, PA_SCROLL_LEFT, PA_SCROLL_LEFT);
-        while(!display.displayAnimate());
+        mp.Switch(&tetris);
+        while(!display.displayAnimate()) {
+            mp.Play();
+        }
         p2.score++;
-        this->position = Vector2(-5, p1.position.y);
+        this->position = Vector2(-6, p1.position.y);
         this->move = Vector2(0,0);
         p1.service = true;
         this->updateRate = 1;
-    } else if (this->position.x > p2.position.x) {
-        buzzer.Buzz();
+        mp.Switch(&mario_underworld);
+    } else if (this->position.x > 7) {
         display.displayText("SCORED", PA_CENTER, 10, 500, PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
-        while(!display.displayAnimate());
+        mp.Switch(&tetris);
+        while(!display.displayAnimate()) {
+            mp.Play();
+        }
         p1.score++;
-        this->position = Vector2(4, p2.position.y);
+        this->position = Vector2(5, p2.position.y);
         this->move = Vector2(0,0);
         p2.service = true;
         this->updateRate = 1;
+        mp.Switch(&mario_underworld);
     }
 
 }

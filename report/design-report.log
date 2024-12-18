@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.4)  18 DEC 2024 06:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.4)  18 DEC 2024 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,24 +384,24 @@ l colors using the xcolor package
 (./design-report.aux)
 \openout1 = `design-report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -459,26 +459,30 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 48.
 (./design-report.out) (./design-report.out)
 \@outlinefile=\write3
 \openout3 = `design-report.out'.
 
 \c@lstlisting=\count308
-<./images/logo.png, id=40, 3011.25pt x 3011.25pt>
+<./images/logo.png, id=60, 3011.25pt x 3011.25pt>
 File: ./images/logo.png Graphic file (type png)
 <use ./images/logo.png>
-Package pdftex.def Info: ./images/logo.png  used on input line 53.
+Package pdftex.def Info: ./images/logo.png  used on input line 56.
 (pdftex.def)             Requested size: 181.18439pt x 181.17262pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.png>]
-<images/schematic.png, id=51, 3520.15125pt x 2489.3pt>
+Overfull \hbox (16.86195pt too wide) in paragraph at lines 99--106
+\OT1/cmr/m/n/12 Potentiometer je-nis ini men-gubah re-sis-tansi pada rangka-ian
+ den-gan meng-gu-nakan mekanisme
+ []
+
+<images/schematic.png, id=71, 3520.15125pt x 2489.3pt>
 File: images/schematic.png Graphic file (type png)
 <use images/schematic.png>
-Package pdftex.def Info: images/schematic.png  used on input line 99.
+Package pdftex.def Info: images/schematic.png  used on input line 118.
 (pdftex.def)             Requested size: 452.9679pt x 320.31578pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -492,13 +496,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 R
+l.122 R
        angkaian menggunakan ESP32 yang terhubung pada IC MAX7219 dimana CS
 [1]
-<images/desain_game.png, id=62, 805.0075pt x 194.7275pt>
+<images/desain_game.png, id=75, 805.0075pt x 194.7275pt>
 File: images/desain_game.png Graphic file (type png)
 <use images/desain_game.png>
-Package pdftex.def Info: images/desain_game.png  used on input line 110.
+Package pdftex.def Info: images/desain_game.png  used on input line 129.
 (pdftex.def)             Requested size: 452.9679pt x 109.5696pt.
 
 
@@ -517,9 +521,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.124 \end{enumerate}
-                      <./images/schematic.png>]
-Overfull \hbox (13.86922pt too wide) in paragraph at lines 128--133
+l.141     \item G
+                 ame akan berakhir bila salah satu pemain mencapai skor 11 d...
+ <./images/schematic.png>]
+Overfull \hbox (13.86922pt too wide) in paragraph at lines 147--152
 \OT1/cmr/m/n/12 Untuk menampilkan ke dot-ma-trix da-pat di-gu-nakan 2 li-brary 
 MD[]Parola dan MD[]MAX72xx.
  []
@@ -534,7 +539,7 @@ File: lstlang1.sty 2024/02/21 1.10 listings language file
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 138.
+nput line 157.
  (../src/main.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -549,8 +554,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.17  
-         analogReadResolution(3); <./images/desain_game.png>]
+l.9 #
+     include "esp32-hal-gpio.h" <./images/desain_game.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -577,7 +582,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6]) (../include/vector2.hpp) (../src/vector2.cpp
+[6]) (../include/vector2.hpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -586,7 +591,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]) (../include/player.hpp) (../src/player.cpp
+[7]) (../src/vector2.cpp) (../include/player.hpp) (../src/player.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -595,7 +600,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8]) (../include/ball.hpp) (../src/ball.cpp
+[8]) (../include/ball.hpp)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -604,7 +609,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9]
+[9] (../src/ball.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -613,8 +618,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10]) (../include/buzzer.hpp) (../src/buzzer.cpp) (../include/score.hpp)
-(../src/score.cpp
+[10]) (../include/buzzer.hpp) (../src/buzzer.cpp) (../include/score.hpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -623,7 +627,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11]) (../include/global.hpp
+[11]) (../src/score.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -632,17 +636,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]) (../src/global.cpp)
-<./images/no-package.jpeg, id=606, 903.375pt x 1606.0pt>
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]) (../include/global.hpp) (../src/global.cpp)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+<./images/no-package.jpeg, id=730, 903.375pt x 1606.0pt>
 File: ./images/no-package.jpeg Graphic file (type jpg)
 <use ./images/no-package.jpeg>
-Package pdftex.def Info: ./images/no-package.jpeg  used on input line 166.
+Package pdftex.def Info: ./images/no-package.jpeg  used on input line 185.
 (pdftex.def)             Requested size: 226.48395pt x 402.62628pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -650,45 +669,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14
+[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.169 \end{document}
+l.188 \end{document}
                      <./images/no-package.jpeg>] (./design-report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `design-report.out' has not changed.
-(rerunfilecheck)             Checksum: 297720A460DE775A7175ACF84049FD7D;962.
+(rerunfilecheck)             Checksum: 786B19B38B324DF7FFEF76A78E05D23C;1636.
  ) 
 Here is how much of TeX's memory you used:
- 14242 strings out of 476076
- 217058 string characters out of 5793775
- 2467187 words of memory out of 5000000
- 35610 multiletter control sequences out of 15000+600000
+ 14339 strings out of 476076
+ 218636 string characters out of 5793775
+ 2488187 words of memory out of 5000000
+ 35625 multiletter control sequences out of 15000+600000
  560581 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 79i,12n,93p,260b,2219s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,12n,93p,260b,2213s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on design-report.pdf (15 pages, 1231498 bytes).
+Output written on design-report.pdf (16 pages, 1241379 bytes).
 PDF statistics:
- 769 PDF objects out of 1000 (max. 8388607)
- 730 compressed objects within 8 object streams
- 541 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 885 PDF objects out of 1000 (max. 8388607)
+ 844 compressed objects within 9 object streams
+ 623 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
