@@ -39,6 +39,7 @@ void Ball::ScoreCheck() {
         this->position = Vector2(-5, p1.position.y);
         this->move = Vector2(0,0);
         p1.service = true;
+        this->updateRate = 1;
     } else if (this->position.x > p2.position.x) {
         buzzer.Buzz();
         display.displayText("SCORED", PA_CENTER, 10, 500, PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
@@ -47,6 +48,7 @@ void Ball::ScoreCheck() {
         this->position = Vector2(4, p2.position.y);
         this->move = Vector2(0,0);
         p2.service = true;
+        this->updateRate = 1;
     }
 
 }

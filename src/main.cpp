@@ -43,10 +43,11 @@ void loop() {
     p2.Draw();
     b.Draw();
 
-    RenderScore(p2.score, 9);
-    RenderScore(p1.score, -16);
+    RightRenderScore(p2.score, 9);
+    LeftRenderScore(p1.score, -10);
 
     if (p1.score >= 11 && p1.score - p2.score >= 2) {
+        delay(100);
         native_display.clear();
         display.displayText("P1 WIN", PA_CENTER, 50, 1000, PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
         while (!digitalRead(p1.smashInput)&& !digitalRead(p2.smashInput)) {
@@ -58,6 +59,7 @@ void loop() {
         p2.score = 0;
     }
     else if (p2.score >= 11 && p2.score - p1.score >= 2) {
+        delay(100);
         native_display.clear();
         display.displayText("P2 WIN", PA_CENTER, 50, 1000, PA_SCROLL_LEFT, PA_SCROLL_LEFT);
         while (!digitalRead(p1.smashInput)&& !digitalRead(p2.smashInput)) {
@@ -68,6 +70,7 @@ void loop() {
         p1.score = 0;
         p2.score = 0;
     } else if (p2.score >= 15 && p1.score >= 15) {
+        delay(100);
         native_display.clear();
         display.displayText("TIE", PA_CENTER, 50, 1000, PA_SCROLL_UP, PA_SCROLL_UP);
         while (!digitalRead(p1.smashInput)&& !digitalRead(p2.smashInput)) {

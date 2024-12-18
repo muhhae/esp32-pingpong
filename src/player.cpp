@@ -34,7 +34,7 @@ void Player::CheckInput() {
         this->last = current;
         if (this->position.x < 0) this->position.x += 2;
         if (this->position.x > 0) this->position.x -= 2;
-        this->power = 15;
+        this->power = 8;
         this->ready = current + 1000;
         if (service) {
             service = false;

@@ -10,7 +10,7 @@ void Setup() {
     native_display.control(MD_MAX72XX::INTENSITY, 0);
 
     display.begin();
-    display.setIntensity(0);
+    display.setIntensity(10);
     display.displayClear();
 
     Serial.begin(9600);
