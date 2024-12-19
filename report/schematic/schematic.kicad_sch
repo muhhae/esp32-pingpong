@@ -1568,6 +1568,146 @@
 				)
 			)
 		)
+		(symbol "PCM_SL_Devices:Buzzer_5V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BZ"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Buzzer_5V"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_ProSignal_ABT-410-RC"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Buzzer 5V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Buzzer Beeper"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Buzzer_5V_0_0"
+				(circle
+					(center -1.778 -0.127)
+					(radius 0.7405)
+					(stroke
+						(width 0.07)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "+"
+					(at -1.778 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Buzzer_5V_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.568)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.8398)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Buzzer_5V_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.2)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.2)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "PCM_SL_Devices:Push_Button"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7868,6 +8008,12 @@
 		(uuid "5cf05eae-75f3-4462-bb53-5d1414bbb1d9")
 	)
 	(junction
+		(at 106.68 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a0edc84-76dd-4e95-b0cd-a3456d667aa2")
+	)
+	(junction
 		(at 127 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8075,6 +8221,16 @@
 	)
 	(wire
 		(pts
+			(xy 15.24 127) (xy 15.24 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "243f1cc6-bb0e-4084-af1d-97aa0d3f3128")
+	)
+	(wire
+		(pts
 			(xy 120.65 55.88) (xy 120.65 111.76)
 		)
 		(stroke
@@ -8085,6 +8241,16 @@
 	)
 	(wire
 		(pts
+			(xy 15.24 66.04) (xy 24.13 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2502a51d-c519-4b35-a1c7-edf8783cd513")
+	)
+	(wire
+		(pts
 			(xy 43.18 109.22) (xy 57.15 109.22)
 		)
 		(stroke
@@ -8092,6 +8258,16 @@
 			(type default)
 		)
 		(uuid "26bc1833-4d4e-4eed-9fcf-c3e361cfb872")
+	)
+	(wire
+		(pts
+			(xy 90.17 72.39) (xy 99.06 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f45f9ac-2695-4f13-b121-4f1944a17ca1")
 	)
 	(wire
 		(pts
@@ -8135,6 +8311,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 129.54) (xy 49.53 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "366a1410-401d-4ce7-b8bb-b08c3571badf")
+	)
+	(wire
+		(pts
 			(xy 128.27 50.8) (xy 116.84 50.8)
 		)
 		(stroke
@@ -8142,6 +8328,16 @@
 			(type default)
 		)
 		(uuid "3804932c-89ad-4054-a01b-080715b3eab5")
+	)
+	(wire
+		(pts
+			(xy 106.68 109.22) (xy 119.38 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39197550-51f3-4395-abbb-ab47634c8d36")
 	)
 	(wire
 		(pts
@@ -8215,6 +8411,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 60.96) (xy 13.97 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "490254ca-8dd4-4b2d-b5f8-57f172f5fc0f")
+	)
+	(wire
+		(pts
 			(xy 20.32 85.09) (xy 20.32 114.3)
 		)
 		(stroke
@@ -8245,6 +8451,26 @@
 	)
 	(wire
 		(pts
+			(xy 16.51 29.21) (xy 96.52 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "546b8adf-a2e8-4130-a716-ea5382c853ed")
+	)
+	(wire
+		(pts
+			(xy 99.06 72.39) (xy 99.06 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57096453-d5d9-4ee9-8a9a-dfa87b480bd9")
+	)
+	(wire
+		(pts
 			(xy 193.04 60.96) (xy 193.04 78.74)
 		)
 		(stroke
@@ -8262,6 +8488,16 @@
 			(type default)
 		)
 		(uuid "5aaf0f99-dc54-4b3c-899b-cfb67d39c948")
+	)
+	(wire
+		(pts
+			(xy 16.51 63.5) (xy 16.51 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ab8edc9-778e-4df5-b65f-44c42aa1894f")
 	)
 	(wire
 		(pts
@@ -8335,16 +8571,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 74.93) (xy 99.06 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71f85e85-1ce8-4356-b71e-317348ceb35d")
-	)
-	(wire
-		(pts
 			(xy 24.13 85.09) (xy 20.32 85.09)
 		)
 		(stroke
@@ -8392,6 +8618,16 @@
 			(type default)
 		)
 		(uuid "8091286f-fc17-4465-a998-a179771001c8")
+	)
+	(wire
+		(pts
+			(xy 24.13 63.5) (xy 16.51 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83e78651-0a57-4599-ac95-185eafcb2d96")
 	)
 	(wire
 		(pts
@@ -8525,6 +8761,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 29.21) (xy 96.52 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2a85a57-b98f-4bd0-9127-0253e4acb0b1")
+	)
+	(wire
+		(pts
 			(xy 24.13 77.47) (xy 17.78 77.47)
 		)
 		(stroke
@@ -8552,6 +8798,16 @@
 			(type default)
 		)
 		(uuid "a8b41bc6-584b-409d-aeb8-bdfa720742dc")
+	)
+	(wire
+		(pts
+			(xy 30.48 127) (xy 15.24 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acd1e306-ebfd-4472-8b5a-6cfb91e6b558")
 	)
 	(wire
 		(pts
@@ -8605,6 +8861,26 @@
 	)
 	(wire
 		(pts
+			(xy 13.97 60.96) (xy 13.97 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1b99ab9-13a1-451e-b2f8-bc8b3e1517d4")
+	)
+	(wire
+		(pts
+			(xy 106.68 54.61) (xy 106.68 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b35a966a-cb2e-48ab-b7b3-0248b5d5c928")
+	)
+	(wire
+		(pts
 			(xy 156.21 71.12) (xy 157.48 71.12)
 		)
 		(stroke
@@ -8615,7 +8891,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 109.22) (xy 119.38 109.22)
+			(xy 86.36 109.22) (xy 106.68 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8672,6 +8948,16 @@
 			(type default)
 		)
 		(uuid "c8981cea-ed34-4824-ac83-747a2098d52c")
+	)
+	(wire
+		(pts
+			(xy 13.97 129.54) (xy 49.53 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d155855b-c8c3-418d-98b7-978084846fbb")
 	)
 	(wire
 		(pts
@@ -8742,16 +9028,6 @@
 			(type default)
 		)
 		(uuid "dc9e10af-b93e-43a0-8d47-45d1e401c3ca")
-	)
-	(wire
-		(pts
-			(xy 90.17 74.93) (xy 99.06 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e22004b2-13e7-4ab1-80c0-eb66a555d972")
 	)
 	(wire
 		(pts
@@ -9319,6 +9595,74 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_SL_Devices:Buzzer_5V")
+		(at 101.6 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "910ff5cf-e367-404d-94b9-54cf928ee6eb")
+		(property "Reference" "BZ1"
+			(at 101.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Buzzer_5V"
+			(at 101.6 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_ProSignal_ABT-410-RC"
+			(at 101.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Buzzer 5V"
+			(at 101.6 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f64d3c70-6366-4ff2-8b6a-31d6aa86f8b9")
+		)
+		(pin "1"
+			(uuid "4f4b83a9-9dbd-4a60-a02e-5a0c03465c72")
+		)
+		(instances
+			(project ""
+				(path "/6f2be3e6-940b-4a2d-a82a-4b02fef2fa63"
+					(reference "BZ1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_Espressif:ESP32-DevKitM-1")
 		(at 57.15 73.66 0)
 		(unit 1)
@@ -9485,7 +9829,6 @@
 		)
 	)
 	(symbol
-		(lib_name "PCM_Elektuur_1:P")
 		(lib_id "PCM_Elektuur_1:P")
 		(at 35.56 124.46 270)
 		(unit 1)
@@ -9568,7 +9911,6 @@
 		)
 	)
 	(symbol
-		(lib_name "PCM_Elektuur_1:P")
 		(lib_id "PCM_Elektuur_1:P")
 		(at 54.61 124.46 270)
 		(unit 1)
